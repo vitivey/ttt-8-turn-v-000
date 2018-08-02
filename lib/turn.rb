@@ -47,8 +47,6 @@ def position_taken?(board, index)
     else
       until valid_move?(board, index)
         turn(board)
-      end
-      move(board, index, character = "X")
     end
     puts display_board(board)
   end
