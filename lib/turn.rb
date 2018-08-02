@@ -44,7 +44,7 @@ def position_taken?(board, index)
     index = input_to_index(input)
     if valid_move?(board, index)
       move(board, index, character = "X")
-      else 
+      else
         until valid_move?(board, index)
         turn(board)
         end
